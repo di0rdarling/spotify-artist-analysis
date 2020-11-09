@@ -14,13 +14,13 @@ class SpotifyClient:
     execute_query(query, query_type, limit=10):
         Returns the results of a given query.
     get_top_artist(artist_query:
-        Returns the top artists for a given artist query.
+        Returns the top artist for a given artist.
     get_artist_top_songs(artist_query, limit=5):
-        Returns the top songs for a given artist query.
+        Returns the top songs for a given artist.
     get_artist_latest_song(artist_query):
-        Returns the latest song for a given artist query.
+        Returns the latest song for a given artist.
     get_artist_genres(artist_query):
-        Returns the list of related genres for a given artist query.
+        Returns the list of related genres for a given artist.
     """
 
     def __init__(self):
@@ -43,7 +43,7 @@ class SpotifyClient:
 
     def get_top_artist(self, artist_query):
         '''
-        Takes in an artist query, returns the top artist found by popularity.
+        Takes in an artist, returns the top artist found by popularity.
 
         Parameters
             artist_query - the artist search query
@@ -65,7 +65,7 @@ class SpotifyClient:
 
     def get_artist_top_songs(self, artist_query, limit=5):
         '''
-        Takes in an artist query and limit, returns the artists top songs by popularity.
+        Takes in an artist and limit, returns the artists top songs by popularity.
 
         Parameters
             artist_query - the artist search query
@@ -92,7 +92,7 @@ class SpotifyClient:
 
     def get_artist_latest_song(self, artist_query):
         '''
-        Takes in an artist query, returns the artist latest song.
+        Takes in an artist, returns the artist latest song.
 
         Parameters
             artist_query - the artist search query
@@ -125,7 +125,7 @@ class SpotifyClient:
 
     def get_artist_genres(self, artist_query):
         '''
-        Takes in an artist query, returns the artists related genres.
+        Takes in an artist, returns the artists related genres.
 
         Parameters
             artist_query - the artist search query
